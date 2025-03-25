@@ -3,8 +3,6 @@ app:
   port: :3000
 
 database:
-  host: localhost
-  port: :3306
-  user: root
-  password: 12345678
-  name: currency_exchange_db
+  dsn: "root:12345678@tcp(127.0.0.1:3306)/currency_exchange_db?charset=utf8mb4&parseTime=True&loc=Local"
+  MaxIdleConns: 11
+  MaxOpenConns: 114
